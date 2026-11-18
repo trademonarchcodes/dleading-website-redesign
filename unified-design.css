@@ -154,3 +154,38 @@ body>main{display:block;width:100%;max-width:none;min-width:0;margin-inline:0}
 body>main>section{width:100%;max-width:none;min-width:0;margin-inline:0}
 body.home-redesign{width:100%;max-width:100%;min-width:0}
 body.home-redesign .new-hero,body.home-redesign .new-about,body.home-redesign .new-services,body.home-redesign .new-portfolio,body.home-redesign .new-insights,body.home-redesign .new-cta{width:100%;max-width:none;min-width:0}
+
+/* Structured footer components shared by all interior pages */
+body:not(.home-redesign) .footer{position:relative;background:radial-gradient(ellipse at 12% 0%,rgba(16,91,166,.18),transparent 38%),linear-gradient(180deg,#07101e 0%,#030711 100%);border-top:1px solid rgba(61,145,226,.35)}
+body:not(.home-redesign) .footer-main{grid-template-columns:minmax(0,1.05fr) minmax(0,.75fr) minmax(0,1.1fr) minmax(0,.95fr);gap:16px}
+body:not(.home-redesign) .footer-main .footer-brand{justify-content:flex-start;gap:16px}
+body:not(.home-redesign) .footer-brand-note{display:block;max-width:230px;color:#71859f;font-size:11px;line-height:1.7}
+body:not(.home-redesign) .footer-group{display:flex;flex-direction:column;align-items:stretch;gap:14px;padding:22px!important;border:1px solid rgba(67,126,190,.25);border-radius:18px;background:linear-gradient(145deg,rgba(14,31,53,.96),rgba(7,15,27,.98));box-shadow:0 14px 36px rgba(0,0,0,.18)}
+body:not(.home-redesign) .footer-group>h4{margin:0 0 4px;padding-bottom:12px;border-bottom:1px solid rgba(86,150,213,.2);color:#70baff;font-size:11px;letter-spacing:.16em;text-transform:uppercase}
+body:not(.home-redesign) .footer-link-list{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+body:not(.home-redesign) .footer-link-list a{display:flex;align-items:center;min-height:36px;padding:7px 9px;border:1px solid rgba(76,126,180,.16);border-radius:9px;background:rgba(18,39,65,.48);color:#c1d0e2!important;font-size:12px!important;line-height:1.35!important;transition:background .2s,border-color .2s,color .2s}
+body:not(.home-redesign) .footer-link-list a:hover{border-color:#258bff;background:rgba(8,124,255,.14);color:#fff!important}
+body:not(.home-redesign) .footer-office{display:flex;flex-direction:column;gap:6px;padding:0 0 12px;border-bottom:1px solid rgba(86,150,213,.16)}
+body:not(.home-redesign) .footer-office:last-child{padding-bottom:0;border-bottom:0}
+body:not(.home-redesign) .footer-office h5{margin:0;color:#edf5ff;font:700 12px Manrope,sans-serif;letter-spacing:.04em}
+body:not(.home-redesign) .footer-office p{margin:0;color:#aabbd0;font-size:12px!important;line-height:1.7!important}
+body:not(.home-redesign) .footer-contact-item{display:flex!important;flex-direction:column;align-items:flex-start;gap:4px;width:100%;padding:10px 11px;border:1px solid rgba(76,126,180,.18);border-radius:10px;background:rgba(18,39,65,.48);color:#eaf3ff!important;font-size:12px!important;line-height:1.5!important}
+body:not(.home-redesign) .footer-contact-label{color:#71baff;font-size:9px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+body:not(.home-redesign) .footer-contact-item>span:last-child{overflow-wrap:anywhere}
+body:not(.home-redesign) .footer-whatsapp{border-color:rgba(37,211,102,.24);background:rgba(12,72,54,.2)}
+body:not(.home-redesign) .footer-bottom{border-top:1px solid rgba(86,150,213,.17);color:#7f91a9}
+body:not(.home-redesign) .footer-bottom .dev-credit a{font-weight:800;text-decoration:none}
+@media(max-width:850px){
+ body:not(.home-redesign) .footer-main{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;padding:34px 5vw}
+ body:not(.home-redesign) .footer-main .footer-brand{grid-column:1/-1}
+ body:not(.home-redesign) .footer-group{padding:18px!important}
+}
+@media(max-width:560px){
+ body:not(.home-redesign) .footer-main{grid-template-columns:minmax(0,1fr);gap:12px;padding:30px 5vw}
+ body:not(.home-redesign) .footer-main .footer-brand{grid-column:auto;padding:8px 2px 14px}
+ body:not(.home-redesign) .footer-group{padding:18px!important}
+ body:not(.home-redesign) .footer-link-list{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+ body:not(.home-redesign) .footer-link-list a{min-height:40px;font-size:13px!important}
+ body:not(.home-redesign) .footer-contact-item{padding:12px}
+ body:not(.home-redesign) .footer-bottom{align-items:flex-start}
+}
