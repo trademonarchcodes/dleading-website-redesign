@@ -221,3 +221,45 @@ body:not(.home-redesign) .footer-group.footer-contact .footer-contact-item:hover
 @media(max-width:560px){
  body:not(.home-redesign) .footer-group.footer-contact .footer-contact-item{padding:13px 14px!important}
 }
+
+
+/* Final explicit footer contact layout: label first, value underneath */
+body:not(.home-redesign) .footer-main .footer-group.footer-contact a.footer-contact-item{
+ display:block!important;
+ width:100%!important;
+ box-sizing:border-box!important;
+ padding:13px 14px!important;
+ margin:0 0 10px!important;
+ white-space:normal!important;
+ text-align:left!important;
+ line-height:1.55!important;
+}
+body:not(.home-redesign) .footer-main .footer-group.footer-contact a.footer-contact-item .footer-contact-label,
+body:not(.home-redesign) .footer-main .footer-group.footer-contact a.footer-contact-item .footer-contact-value{
+ display:block!important;
+ position:static!important;
+ float:none!important;
+ clear:both!important;
+ width:100%!important;
+ max-width:100%!important;
+ box-sizing:border-box!important;
+ margin:0!important;
+ padding:0!important;
+ white-space:normal!important;
+ text-align:left!important;
+}
+body:not(.home-redesign) .footer-main .footer-group.footer-contact a.footer-contact-item .footer-contact-label{
+ margin-bottom:5px!important;
+ color:#71baff!important;
+ font-size:10px!important;
+ font-weight:800!important;
+ letter-spacing:.14em!important;
+ text-transform:uppercase!important;
+}
+body:not(.home-redesign) .footer-main .footer-group.footer-contact a.footer-contact-item .footer-contact-value{
+ color:#eaf3ff!important;
+ font-size:13px!important;
+ line-height:1.6!important;
+ overflow-wrap:anywhere!important;
+ word-break:normal!important;
+}
