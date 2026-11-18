@@ -1,0 +1,1 @@
+const tiles=document.querySelectorAll('.new-deck .deck-tile');tiles.forEach(tile=>tile.addEventListener('click',()=>{tiles.forEach(t=>t.classList.toggle('active',t===tile));}));
