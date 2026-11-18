@@ -148,3 +148,9 @@ body:not(.home-redesign) .footer-bottom .dev-credit a{display:inline;color:#55aa
  body:not(.home-redesign) .footer-main p,body:not(.home-redesign) .footer-main a:not(.brand){font-size:13px;line-height:1.7}
  body:not(.home-redesign) .footer-bottom{display:flex;flex-direction:column;align-items:flex-start;gap:8px;padding:18px 5vw}
 }
+
+/* Ensure homepage and interior page canvases always span the device viewport */
+body>main{display:block;width:100%;max-width:none;min-width:0;margin-inline:0}
+body>main>section{width:100%;max-width:none;min-width:0;margin-inline:0}
+body.home-redesign{width:100%;max-width:100%;min-width:0}
+body.home-redesign .new-hero,body.home-redesign .new-about,body.home-redesign .new-services,body.home-redesign .new-portfolio,body.home-redesign .new-insights,body.home-redesign .new-cta{width:100%;max-width:none;min-width:0}
