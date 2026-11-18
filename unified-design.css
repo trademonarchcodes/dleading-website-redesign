@@ -189,3 +189,35 @@ body:not(.home-redesign) .footer-bottom .dev-credit a{font-weight:800;text-decor
  body:not(.home-redesign) .footer-contact-item{padding:12px}
  body:not(.home-redesign) .footer-bottom{align-items:flex-start}
 }
+
+/* Contact details: keep each label and its value on separate lines */
+body:not(.home-redesign) .footer-group.footer-contact .footer-contact-item{
+ display:grid!important;
+ grid-template-columns:minmax(0,1fr);
+ grid-auto-flow:row;
+ align-items:start!important;
+ justify-items:start;
+ gap:5px!important;
+ text-align:left;
+ white-space:normal;
+}
+body:not(.home-redesign) .footer-group.footer-contact .footer-contact-item .footer-contact-label{
+ display:block!important;
+ width:100%;
+ margin:0;
+ line-height:1.35!important;
+}
+body:not(.home-redesign) .footer-group.footer-contact .footer-contact-item>span:last-child{
+ display:block!important;
+ width:100%;
+ margin:0;
+ line-height:1.6!important;
+ overflow-wrap:anywhere;
+}
+body:not(.home-redesign) .footer-group.footer-contact .footer-contact-item:hover{
+ border-color:#318fff;
+ background:rgba(8,124,255,.12);
+}
+@media(max-width:560px){
+ body:not(.home-redesign) .footer-group.footer-contact .footer-contact-item{padding:13px 14px!important}
+}
